@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace AccountBackend.Models
+namespace RegisterFunction.Models
 {
-    public class Account: TableEntity
+    public class Account
     {
         public string Name { get; set; }
         public string Photo { get; set; }
         public string Thumbnail { get; set; }
+        public string RowKey { get; set; }
+        public string PartitionKey { get; set; }
     }
 }
